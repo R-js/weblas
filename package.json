@@ -10,12 +10,16 @@
     "dist": "dist"
   },
   "dependencies": {
-    "glslify": "^5.0.2"
+    "acorn": "^6.0.4",
+    "browserify": "^16.2.3",
+    "glslify": "^5.0.2",
+    "jshint": "^2.9.6"
   },
   "devDependencies": {
     "arrayloader": "^3.0.1",
     "async": "^2.4.1",
     "benchmark": "^1.0.0",
+    "browserfy": "^1.0.0",
     "licensify": "^3.1.2",
     "microtime": "^2.0.0",
     "minifyify": "^7.1.0",
@@ -29,7 +33,9 @@
     "benchmark": "browserify benchmark/*.js | testling -x $npm_config_browser"
   },
   "browserify": {
-    "transform": ["glslify"]
+    "transform": [
+      "glslify"
+    ]
   },
   "repository": {
     "type": "git",
